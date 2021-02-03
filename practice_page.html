@@ -28,6 +28,17 @@
                     el = document.getElementById('age');
                 el.innerText = Math.floor(years);
             }
+            
+            function removeTrailingOblique( path )
+            {
+                let ch = path[path.length-1];
+
+                if( ch === '/')
+                    path = path.substring(0, path.length-1);
+
+                return path;
+            }
+
         </script>
 	</head>
 	<body data-new-gr-c-s-loaded="14.993.0">
