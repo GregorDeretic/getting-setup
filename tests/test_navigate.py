@@ -47,6 +47,7 @@ def test_navigate():
 
     assert current_page == bbc_expected_url
 
+    # driver.back()
     driver.get('file:///Users/GDC02/Documents/Automated%20Tester%20Reskill%20Bootcamp%202021/week%203/testing/testcafe-quicklab-practice/src/practice_page.html')
     
     qa = WebDriverWait(driver, 1).until(find)
